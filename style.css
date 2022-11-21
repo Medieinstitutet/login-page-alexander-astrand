@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 8px;
+}
+
+#header {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#mainSection {
+    height: 90vh;
+}
+
+#footer {
+    height: 5vh;
+}
+
+#logOutBtn {
+    height: 20px;
+}
