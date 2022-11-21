@@ -11,16 +11,20 @@
     <header id="header">
         <div id ="loginMenu">
             <input id="nameLogin" type="text" placeholder="enter username">
-            <input id="password" type="text" placeholder="enter password">
+            <input type="password" id="password" type="text" placeholder="enter password">
             <button id="loginBtn">login</button>
+            <br>
+            <input id="checkbox" type="checkbox"><span>Show password</span> 
         </div>
+        <div id="failedLogin"></div>
         <div id="newUserBtn">
             <button>new user</button>
         </div>
     </header>
     <main id="mainSection">
         <section id="mainContent">
-            <h1>Welcome to login application</h1>
+            <h1 id="welcomeMain">Welcome to login application</h1>
+            <div id="addNewUserForm"></div>
         </section>
     </main>
     <footer id = "footer">
