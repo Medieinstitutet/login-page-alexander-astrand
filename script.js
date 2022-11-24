@@ -15,6 +15,13 @@ let failMessageNewUser = document.getElementById("failMessageNewUser");
 let monolith = document.getElementById("monolith");
 let creepyVideo = document.getElementById("creepyVideo");
 let footer = document.getElementById("footer");
+let son = document.getElementById("son");
+let times = document.getElementById("times");
+let sonShining = document.getElementById("sonShining")
+
+addNewUserForm.style.display = "none";
+son.style.display = "none";
+
 
 function loggedIn () {
     if (localStorage.getItem("logged in")) {
@@ -46,6 +53,9 @@ function toHomePage () {
     failedLogin.style.display = "none";
     failedLogin.innerHTML = "";
     failMessageNewUser.innerHTML = "";
+    son.style.display = "none";
+    times.style.color = "white";
+    sonShining.style.color = "white";
     document.getElementById("welcomeUserText").remove();
 }
 
@@ -53,6 +63,9 @@ function createUserPage () {
     mainContent.style.display = "none";
     loginMenu.style.display = "none";
     newUserBox.style.display = "none";
+    son.style.display = "block";
+    times.style.color = "#DAA520";
+    sonShining.style.color = "#DAA520"
 
     let userPage = document.createElement("div");
     userPage.id = "userPage";
@@ -70,7 +83,7 @@ function createUserPage () {
 }
 
 monolith.addEventListener("click", () => {
- toHomePage (); 
+        toHomePage (); 
 })
 
 
@@ -92,7 +105,7 @@ if (localStorage.getItem("users")) {
         },
         {
             username: "Rebecca",
-            password: "candyfloss"
+            password: "password"
         }
     ];
 localStorage.setItem("users", JSON.stringify(users));
@@ -144,7 +157,6 @@ function login () {
     })
 }
 
-addNewUserForm.style.display = "none";
 
 function addUser () {
     newUserBtn.addEventListener ("click", () => {

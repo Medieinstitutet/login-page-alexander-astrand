@@ -119,6 +119,7 @@ body {
     cursor: pointer;
     border-radius: 15px;
     font-family: 'MedievalSharp', cursive;
+    background-color: #DAA520;
 }
 
 #loginBtn {
