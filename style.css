@@ -1,26 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 body {
     display: flex;
     height: 100vh;
     flex-direction: column;
     margin: 0;
-    padding: 8px;
+    font-family: 'MedievalSharp', cursive;
 }
 
 #header {
+    justify-content: space-between;
     height: 5vh;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
+    border-bottom: 2px black solid;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: rgb(50, 45, 45);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#monolith {
+    height: 40px;
+    width: 40px;
+    border-radius: 45%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 #mainSection {
     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/monolith4.jpg');
+    background-size:cover;
+    color: white;
+}
+
+#mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#mainContent h1 {
+    font-size: 50px;
+}
+
+#addNewUserForm {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#addUserBtn {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+#newUserBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#newUserBox span {
+    font-size: 20px;
+}
+
+#newUserBtn {
+    width: 80px;
+    height: 30px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+#failMessageNewUser {
+    color: red;
+}
+
+#failedLogin{
+    color: red;
+}
+
+#userPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer {
     height: 5vh;
+    border-top: 2px black solid;
+    background-color: rgb(50, 45, 45);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 #logOutBtn {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+#loginBtn {
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+#checkbox {
+    cursor: pointer;
+}
+
+#newUserBtn {
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+#userPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 30px;
+    color: #DAA520;
+}
+
+#son {
+    height: 30px;
+}
+
+#nameLogin {
+    border-radius: 15px;
+    width: 200px;
     height: 20px;
+    padding-left: 10px;
+    font-family: 'MedievalSharp', cursive;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#password {
+    border-radius: 15px;
+    width: 200px;
+    height: 20px;
+    padding-left: 10px; 
+    font-family: 'MedievalSharp', cursive;
+}
+
+#pageInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: #DAA520;
 }
