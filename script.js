@@ -17,7 +17,7 @@ let creepyVideo = document.getElementById("creepyVideo");
 let footer = document.getElementById("footer");
 let son = document.getElementById("son");
 let times = document.getElementById("times");
-let sonShining = document.getElementById("sonShining")
+let sonShining = document.getElementById("sonShining");
 
 addNewUserForm.style.display = "none";
 son.style.display = "none";
@@ -83,7 +83,10 @@ function createUserPage () {
 }
 
 monolith.addEventListener("click", () => {
+    if (localStorage.getItem("logged in")) {
+    } else {
         toHomePage (); 
+    }
 })
 
 
