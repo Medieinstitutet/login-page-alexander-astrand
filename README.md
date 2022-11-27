@@ -1,15 +1,15 @@
 ﻿# login-page-alexander-astrand
             
-username: Janne
+username: Janne,
 password: test
 
-username: Alex
+username: Alex,
 password: Hello
 
 
-username: Anders
+username: Anders,
 password: Lovis
 
-username: Rebecca
+username: Rebecca,
 password: password
         
